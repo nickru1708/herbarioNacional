@@ -1,0 +1,194 @@
+.featuredNews{
+    padding-top: 80px;
+    background-color: #f8f8f8;
+    padding-bottom: 65px;
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px #c9c9c9 solid;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 26px;
+        color: #595959;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    &-wrapperElemets{
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    &-day{
+        font-size: 35px;
+        color: $black;
+        margin-top: 25px;
+    }
+    &-month{
+        color: #747474;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    &-wrapperText{
+        width: 100%;
+        max-width: 255px;
+    }
+    &-titleText{
+        color: #75d03a;
+        font-size: 15px;
+    }
+    &-text{
+        color: #9a9da0;
+        font-size: 15px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    &-button{
+        background-color: #62d03a;
+        padding: 8px 22px 8px 22px;
+        color: white;
+        font-size: 18px;
+        font-size: 700;
+        border-radius: 8%;
+        width: 100%;
+        max-width: 90px;
+        text-align: center;
+        &:hover{
+            text-decoration: none;
+            color: white;
+            background-color: #4d4d4d;
+            transition: all ease-in 0.1s;
+        }
+    }
+    @include media-breakpoint-down(md){
+        &-wrapper{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-title{
+            text-align: center;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &-wrapper{
+            flex-direction: column;
+        }
+        &-wrapperText{
+            max-width: 400px;
+            width: 100%;
+        }
+    }
+}
+
+.specialEvents{
+    padding-top: 35px;
+    padding-bottom: 60px;
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &-wrapperElements{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 26px;
+        color: #595959;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    &-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &-img{
+        max-width: 350px;
+        width: 100%;
+    }
+    &-wrapperText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 460px;
+        width: 100%;
+        margin-left: 30px;
+    }
+    &-date{
+        font-weight: 600;
+        font-size: 18px;
+        color: #595959;
+    }
+    &-link{
+        color: #62d03a;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    &-text{
+        color: #9a9a9d;
+        font-size: 15px;
+    }
+    &-archives{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 35px;
+    }
+    &-archivesTitle{
+        font-weight: 700;
+        font-size: 26px;
+        color: #595959;
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    &-archivesLink{
+        color: #62d03a;
+        font-size: 16px;
+        &:hover{
+            color: $black;
+            text-decoration: none;
+        }
+    }
+    &-archivesListItem{
+        margin-bottom: 12px;
+        list-style: none;
+        i{
+            font-size: 10px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        &-wrapper{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title{
+            text-align: center;
+        }
+        &-wrapperElements{
+            align-items: center;
+            justify-content: center;
+        }
+        &-archives{
+            margin-left: 0;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &-items{
+            flex-direction: column;
+        }
+        &-img{
+            margin-bottom: 30px
+        }
+    }
+}

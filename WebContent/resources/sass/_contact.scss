@@ -1,0 +1,177 @@
+.Contact{
+    font-family: $text;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: #f8f8f8;
+
+    &-titleLocation{
+        font-size: 25px;
+        color: #595959;
+        padding-bottom: 31px;
+        border-bottom: 1px solid #c9c9c9;
+
+        font-weight: 700;
+        width: 100%;
+        max-width: 770px;
+        margin-bottom: 45px;
+
+        &.form{
+            max-width: 600px;
+        }
+    }
+
+    &-wrapper{
+        width: 100%;
+        max-width: 770px;
+
+        &.contact{
+            max-width: 330px;
+            margin-left: 15px;
+        }
+    }
+
+    &-wrapperRow{
+        @extend %flex-row;
+        align-items: flex-start;
+        
+        &.spaceBetween{
+            justify-content: space-between;
+        }
+    }
+    &-map{
+        width: 100%;
+        max-width: 470px;
+    }
+    &-infoCompany{
+        margin-left: 30px;
+    }
+    &-nameCompany{
+        font-size: 15px;
+        color: #656464;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &-address{
+        color: #9a9a9a;
+        font-size: 14px;
+        width: 100%;
+        max-width: 137px;
+        margin-bottom:  21px;
+    }
+    &-contactCompany{
+        margin-bottom: 30px;
+    }
+    &-telephone, &-email{
+        margin: 0;
+
+        color: #9a9a9a;
+        font-size: 14px;
+    }
+    &-phoneNumber{
+        margin-left: 32px;
+
+        &.moreMarginLef{
+            margin-left: 34px;
+        }
+    }
+    &-faxNumber{
+        margin-left: 76px;
+    }
+    &-emailLink{
+        color: #9a9a9a;
+        text-decoration: underline;
+
+        transition: all 0.2s ease;
+
+        &:hover{
+            color: #62d03a;
+            text-decoration: none;
+        }
+    }
+
+    &-form{
+        width: 100%;
+        max-width: 370px;
+    }
+    &-input{
+        padding: 5px 10px 5px 12px;
+        font-size: 14px;
+        width: 100%;
+        color: #645d5d;
+        border: none;
+        height: 32px;
+        
+        &.textarea{
+            height: 200px;
+            resize: none;
+        }
+
+        &:focus{
+            color: #9a9a9a;
+        }
+
+    }
+    &-wrapperField{
+        margin-bottom: 10px;
+    }
+    &-wrapperButtons{
+        margin-top: 20px;
+    }
+    &-button{
+        padding: 11px 26px;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 7px;
+        background-color: #62d03a;
+        border: none;
+        
+        transition: all 0.2s ease;
+        
+        &.send{
+            margin-left: 15px;
+        }
+        
+        &:hover{
+            background-color: #4d4d4d;
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        &-map{
+            max-width: 376px;
+        }
+        &-wrapper.contact{
+            max-width: 280px;
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        &-wrapperRow.spaceBetween{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-titleLocation{
+            text-align: center;
+
+            &.form{
+                margin-top: 20px;
+            }
+        }
+        &-wrapper.contact, &-form{
+            max-width: 450px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &-wrapperRow{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-infoCompany{
+            margin-left: 0;
+            margin-top: 30px;
+        }
+        &-map{
+            max-width: 500px;
+        }
+    }
+}

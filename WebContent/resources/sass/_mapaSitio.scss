@@ -1,0 +1,33 @@
+.SiteMap{
+    padding-bottom: 80px;
+    background-color:#f8f8f8;
+    padding-top: 35px;
+
+    &-title{
+        font-weight: 700;
+        font-size: 25px;
+        color: #595959;
+        text-align: center;
+        border-bottom: 1px #c9c9c9 solid;
+        padding-bottom: 31px;
+        text-transform: uppercase;
+    }
+
+    &-list{
+        list-style: none;
+    }
+    &-link{
+        font-size: 22px;
+        color:#62d03a;
+        text-decoration: none;
+        margin-bottom: 7px;
+        i{
+            margin-right: 10px;
+        }
+        &:hover{
+            color:$black;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+    }
+}

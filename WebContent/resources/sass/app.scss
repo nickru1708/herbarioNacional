@@ -1,0 +1,22 @@
+//Configuracion
+@import 'variables';
+
+//Vendor
+@import 'vendor';
+
+//Comunes
+@import "mixins";
+@import "common";
+
+//Fuentes
+@import "fonts";
+
+//Paginas
+@import "index";
+@import "tips";
+@import "contact";
+@import "AboutUs";
+@import "subscribe";
+@import "News&events";
+@import "mapaSitio";
+

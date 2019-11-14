@@ -1,0 +1,179 @@
+.Tips{
+    &-title{
+        font-size: 28px;
+        font-weight: 700;
+        font-family: $text;
+        color: #595959;
+        margin-top: 81px;
+        padding-bottom: 31px;
+        border-bottom: 1px solid #c9c9c9;
+        text-transform: uppercase; 
+        text-align: center; 
+    }
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px; 
+    }
+    &-image{
+        width: 100%;
+        max-width: 170px;
+        height: 170px;
+        margin-right: 30px;
+    }
+    &-wrapperText{
+        display: flex;
+        flex-direction: column;
+    }
+    &-infoTitle{
+        font-size: 15px/24px; 
+        color: #656464;
+        font-family: $text;
+        text-transform: uppercase;
+        margin-top: 38px;
+        margin-bottom: 17px;
+        text-decoration: none;
+    }
+    &-infoText{
+        color: #9a9a9a;
+        font-family: $text;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    &-postTitle{
+        font-size: 28px;
+        font-weight: 700;
+        font-family: $text;
+        color: #595959;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    &-postText{
+        color: #9a9a9a;
+        font-family: $text;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 28px;
+    }
+    &-postAuthor{
+        color: $black;
+        font-family: $text;
+        font-size: 15px;
+        font-weight: 300;
+        &:hover{
+            transition: all 0.3s ease;
+            color: #62d03a;
+            text-decoration: none;
+        }
+    }
+    &-preventingTitle{
+        font-size: 15px/24px; 
+        color: #656464;
+        font-family: $text;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 30px;
+        &:hover{
+            transition: all 0.3s ease;
+            color: #62d03a;
+            text-decoration: none;
+        }
+    }
+    &-preventingText{
+        color: #9a9a9a;
+        font-family: $text;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 28px;
+        margin-top: 15px;
+    }
+    &-wrapperLinks{
+        display: flex;
+        flex-direction: column;
+    }
+    &-preventingLink{
+        color: #4bb624;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 14/16px;
+        font-family: $text;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        position: relative;
+        &:hover{
+            transition: all 0.3s ease;
+            color: $black;
+            text-decoration: none;
+        }
+        i{
+            font-size: 12px;
+            color: $black;
+            margin-right: 10px;
+        }
+    }
+    &-postWrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    &-postWrapperText{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        position: relative;
+        i{
+            font-size: 28px;
+            color: #62d03a;
+            position: absolute;
+            top: 0;
+            left: -30px;
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        &-postTitle{
+            text-align: center;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &-postText{
+            width: 100%;
+            max-width: 400px; 
+            
+        }
+        &-postWrapperText{
+            align-items: center;
+            padding-left: 20px;
+            i{
+                top: 0;
+                left: -10px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs){
+        &-wrapper{
+            flex-direction: column;
+        }
+        
+        &-image{
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-right: 0;
+        }
+        &-infoTitle, &-infoText, &-title, &-wrapperLinks{
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 349.95px) {
+        .aria-label.fontSize{
+            font-size: 11px;
+        }
+    }
+
+}
+
+.aria-label{
+    margin: 0 auto;
+}
