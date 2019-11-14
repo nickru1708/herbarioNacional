@@ -97,7 +97,7 @@
     </header>
     <section class="Main">
         <div class="container">
-            <h2 class="Main-title">Bienvenido</h2>
+            <h2 class="Main-title">Bienvenido al herbario nacioanl</h2>
             <p class="Main-text">Bienvenido al Herbario Nacional, instituto de investigación y coleccion de plantas de Nicaragua, comunes, especies raras y especies en peligro de extinción.</p>
             <div class="row">
                 <div class="col-12 col-lg-6">
